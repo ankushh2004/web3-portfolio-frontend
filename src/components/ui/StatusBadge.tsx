@@ -1,5 +1,6 @@
 import { Badge, type BadgeVariant } from "./Badge";
-import type { TxStatus } from "@/constants/mockData";
+
+type TxStatus = "Confirmed" | "Pending" | "Failed";
 
 const MAP: Record<TxStatus, [BadgeVariant, string]> = {
   Confirmed: ["success", "Confirmed"],
